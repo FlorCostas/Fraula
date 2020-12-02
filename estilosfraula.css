@@ -1,0 +1,265 @@
+
+.titulo {
+	color: #8D99AE;
+}
+
+.tituloRecetasFull {
+	color: #8D99AE;
+	display: block;
+}
+
+.tituloRecetasCorto {
+	display: none;
+}
+
+
+@media (max-width: 600px) {
+	.tituloRecetasFull {
+		display: none;
+	}
+
+	.tituloRecetasCorto{
+		display: block;
+		color: #8D99AE;
+	}
+	
+}
+
+.menu { 
+	display: inline-block;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+@media (max-width: 600px) {
+	.menu {
+		display: inline-block;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+}
+
+.textoCentrado {
+	text-align: center;
+	padding-inline-start: 0px;
+	margin-block-end: 0px;
+    margin-block-start: 0px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #fde4e7 100%);
+}
+
+.recetasDisplay {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;	
+}
+
+.bordeabajo {
+	margin-bottom: 30px;
+}
+
+.bordeabajoextra {
+	margin-bottom: 50px;
+}
+
+body {
+	font-family: 'Bebas Neue', cursive;
+}
+
+.fuenteQuienSoy {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1	{
+	font-size: 300%;
+	text-align: center;
+	letter-spacing: 10px
+}
+
+.imagenCentro {	
+	display: block;
+	margin: 1px auto;
+}
+
+.bordesredondeados {
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 0px solid #000000;
+}
+
+.imagenReceta {
+	height: 300px;
+}
+
+.video {
+	width:240px;
+}
+
+
+@media (max-width: 600px) {
+	.imagenReceta {
+		height: 225px;
+	}
+
+	.video {
+		width:180px;
+	}
+	
+}
+
+ul li a { 
+	color: #D90429;
+}
+
+p {	
+	font-size: 120%;
+	text-align: center;
+	color: #2B2D42;
+}
+
+h2	{
+	font-size: 150%;
+	text-align: center;
+	letter-spacing: 5px;
+	color: #D90429;
+}
+
+h3	{
+	font-size: 125%;
+	text-align: left;
+	letter-spacing: 5px;
+	color: #D90429;
+}
+
+#formulario	{
+	text-align: center;
+	border: dotted;
+	border-color: #D90429; 
+	border-width: 2px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/**GRIDS**/
+
+.quiensoy {
+	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-areas:
+    "foto1 parrafo1 parrafo1"
+    "parrafo2 parrafo2 foto2"
+    "foto3 parrafo3 parrafo3";
+    gap: 0px 10px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+@media (max-width: 600px) {
+	.quiensoy {
+		text-align: center;
+		display: block;
+		padding-left: 0%;
+   		padding-right: 0%;
+	}
+	
+}
+
+.foto1 { 
+	grid-area: foto1;
+	justify-self: center;
+	align-self: center;
+	animation-name: animate__backInLeft;
+	animation-duration: 3s;
+}
+.parrafo1 {
+	grid-area: parrafo1;
+	align-self: center;
+	margin-left: 10%;
+}
+
+@media (max-width: 600px) {
+	.parrafo1 {
+		margin-left: 0;
+	}
+	
+}
+.parrafo2 {
+	grid-area: parrafo2;
+	align-self: center;
+	margin-right: 15%;
+	font-size: 140%;
+}
+@media (max-width: 600px) {
+	.parrafo2 {
+		margin-right: 0;
+		font-size: 100%;
+	}
+	
+}
+.foto2 { 
+	grid-area: foto2;
+	justify-self: center;
+	animation-name: animate__backInRight;
+	animation-duration: 3s;
+}
+.foto3 {
+	grid-area: foto3;
+	justify-self: center;
+	align-self: center;
+	animation-name: animate__backInLeft;
+	animation-duration: 3s;
+}
+.parrafo3 {
+	grid-area: parrafo3;
+	align-self: center;
+	margin-left: 10%;
+}
+@media (max-width: 600px) {
+	.parrafo3 {
+		margin-left: 0;
+	}
+	
+}
+
+/**ANIMACIONES-TRANFORMACIONES Y TRANSICIONES**/
+
+.agrandar:hover {
+	transform: scale(1.2);
+}
+
+.logo {
+	animation-name: animate__pulse;
+	animation-duration: 3s;
+	animation-iteration-count: 2;
+	margin-bottom: 15px;
+}
+
+/**BOOTSTRAP**/
+
+.carousel {
+	width: 30%;
+}
+
+ul li a:hover {
+	color: #2B2D42;
+}
+
+#nopadding {
+	padding-bottom: 0px;
+}
+
+
+@media (max-width: 576px) {
+
+	.footermobile {
+		text-align: center;
+	}
+
+	.carousel {	
+		width: 75%;
+	}
+}
+
